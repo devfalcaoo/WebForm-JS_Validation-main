@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação JavaScrip</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+    <body>
+        <div class="main">
+            
+            <!-- TITULO -->
+            <div class="titulo_apresentacao">
+                <h1>Learn to code by watching others</h1>
+                <p class="texto_baixo_titulo">
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+                </p>
+            </div>
+            <!-- TITULO -->
+
+                <div class="c-container__box">
+                    <div class="promotion__box">
+                        <p><strong>Try it for free 7 days </strong>then $20/mo. thereafter</p>
+                    </div>
+                    <!-- Seção do formulário -->
+                    <div class="espaco_formulario">
+                        <div class="formulario">
+                            <form id="form" class="form" novalidate>
+                                <div class="form-control">
+                                    
+                                    <input type="text" id="First-name" placeholder="First name">
+                                    <div class="c-box__erro">
+                                    <i><img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="icon-error"></i>
+                                    <small>First name is required</small>
+                                </div>
+                                </div>
+
+                                <div class="form-control">
+                                    <input type="text" id="Last-name" placeholder="Last name" required>
+                                    <div class="c-box__erro">
+                                    <i><img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="icon-error"></i>
+                                    <small>Last name is required</small>
+                                </div>
+                                </div>
+                            
+                                <div class="form-control">
+                                    <input type="email" id="email" placeholder="E-mail adress" required>
+                                    <div class="c-box__erro">
+                                    <i><img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="icon-error"></i>
+                                    <small>E-mail is required</small>
+                                </div>
+                                </div>
+                            
+                                <div class="form-control">
+                                    <input type="password" id="password" placeholder="Password" required>
+                                    <div class="c-box__erro">
+                                    <i><img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="icon-error"></i>
+                                    <small>Password is required</small>
+                                </div>
+                                </div>
+                            
+                                <button type="submit">CLAIM YOUR FREE TRIAL</button>
+                                <footer>By clicking the button you're agreeing to our <span> Terms and Services </span></footer>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

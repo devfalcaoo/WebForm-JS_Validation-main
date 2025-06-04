@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body { 
+    background-color: #ff7978;
+    background-image: url('intro-component-with-signup-form-master/images/bg-intro-desktop.png');
+    color: #FFFFFF;
+    display: flex; 
+    justify-content: center; /* Espaçamento entre o texto e o formulário */
+    align-items: center;
+    min-height: 100vh; /* Altura mínima da tela */
+    overflow: hidden; /* Oculta o conteúdo que transborda */
+}
+
+.main {
+    display: flex; /* Flexbox para alinhar os itens */
+    justify-content: space-between; 
+    align-items: center; /* Alinha os itens verticalmente */
+    max-width: 1200px;
+    width: 100%;
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 15px; 
+}
+
+/*Título e parágrafo*/
+.titulo_apresentacao {
+    display: flex; /* Flexbox para alinhar os itens */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    flex-flow: column; /* Direção da coluna */
+    margin-bottom: 15px; /* Espaçamento entre os itens */
+    padding: 125px; 
+}
+
+.titulo_apresentacao h1 {
+    line-height: 50px; /* Altura da linha */
+    font-size: 46px; /* Tamanho da fonte */
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.titulo_apresentacao p {
+    line-height: 26px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/*Título de valor $*/
+.promotion__box{
+    padding: 14px 53px;
+    background-color: #5D54A3;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #FB010147;
+    width: 505px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*div do formulário*/
+/* ================== CONTAINER FORMULÁRIO ==================== */
+.espaco_formulario {
+    background-color: #FFFFFF ; /*Cor de fundo do formulário*/
+    border-radius: 15px; /*Borda arredondada do formulário*/
+    box-shadow: 0px 8px 0px #FB010147; /*Sombra do formulário*/
+    max-height: 565px; /*Altura máxima do formulário*/
+    opacity: 1; /*Opacidade do formulário*/
+    padding: 15px;
+}
+/* ================== /CONTAINER FORMULÁRIO ==================== */
+.header {
+    text-align: left; 
+    max-width: 500px;
+    color: #FFFFFF; /*Cor do texto do cabeçalho*/
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-control {
+    position: relative; /*Posição relativa do formulário*/
+}
+
+.form label {
+    display: inline-block; /*Exibe o rótulo em linha*/
+    margin-bottom: 4px; /*Margem inferior do rótulo*/
+}
+
+.form input {
+    display: block; /* Exibe o campo de entrada em bloco */
+    width: 100%; /* Largura total */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #3A3A3A; /* Borda cinza clara */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+.form input:focus {
+    outline: none; /*Remove o contorno do campo de entrada*/
+    border-color: #77E2B4; /*Cor da borda do campo de entrada ao focar*/
+    box-shadow: 0px 5px 0px #6ACCA1; /*Sombra do campo de entrada ao focar*/
+}
+
+.c-box__erro {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    flex-direction: row-reverse; 
+    align-content: center; 
+    flex-wrap: wrap; /* Alinha o conteúdo ao centro */
+    visibility: hidden;
+}
+
+.form-content small{
+    position: absolute; /*Posição absoluta do texto de erro*/
+    bottom: -20px; /*Posição inferior do texto de erro*/
+    left: 0; /*Posição do texto de erro à esquerda*/
+    font-size: 12px; /*Tamanho da fonte do texto de erro*/
+    color: #e74c3c;
+    visibility: hidden; /*Visibilidade do texto de erro*/
+}
+
+/*Botão de enviar*/
+.form button {
+    background-color: #77E2B4; /* Cor do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 600; /* Negrito */
+    color: #FFFFFF; /* Cor do texto */
+    height: 50px; /* Altura do botão */
+    width: 100%; /* Largura total */
+    cursor: pointer; /* Cursor de ponteiro */
+    box-shadow: 0px 5px 0px #6ACCA1; /* Sombra do botão */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+form button:hover {
+    background-color: #6ACCA1; /*Cor do botão ao passar o mouse*/
+    box-shadow: 0px 5px 0px #77E2B4; /*Sombra do botão ao passar o mouse*/
+}
+
+/*Frase de rodapé do formulário*/
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #9D9D9D;
+    margin-top: 20px;
+    font: normal normal normal 12px/18px "Poppins", sans-serif; /*Fonte do rodapé*/
+}
+
+/*Destaque do texto de rodapé*/
+span {
+    color:#ff7978;
+    font-weight: 600;
+}
+
+/* Error and success messages */
+
+.form-control.error c-box__erro.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+/* =========== MEDIA QUERI ============== */
+@media (max-width: 800px) {
+    .main {
+        display: block;
+        flex-direction: column;
+    }
+    .titulo_apresentacao h1 {
+        text-align: center;
+    }
+    .titulo_apresentacao p {
+        text-align: center;
+    }
+    .promotion__box {
+        width: 100%;
+        height: auto;
+    }
+    .promotion__box h1 {
+        font-size: 38px;
+        padding: auto;
+        height: auto;
+    }
+    .promotion__box p {
+        font-size: 15px;
+        padding: auto;
+        height: auto;
+        text-align: center;
+    }
+    body {
+        overflow: auto;
+    }
+}

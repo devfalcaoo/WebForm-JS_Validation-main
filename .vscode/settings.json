@@ -1,0 +1,10 @@
+{
+    "accessibility.hideAccessibleView": true,
+    "accessibility.signalOptions.debouncePositionChanges": false,
+    "debug.closeReadonlyTabsOnEnd": false,
+    "debug.allowBreakpointsEverywhere": false,
+    "debug.confirmOnExit": "never",
+    "problems.showCurrentInStatus": false,
+    "window.autoDetectColorScheme": false,
+    "window.closeWhenEmpty": false
+}
